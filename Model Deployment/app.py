@@ -6,12 +6,11 @@ import joblib
 
 input_collumns = ['position_level', 'gender_requirement', 'work_type',
        'degree_requirement', 'experience_requirement', 'company_size',
-       'company_type', 'primary_industry', 'related_industry_1',
-       'related_industry_2', 'recruiting_area', 'probation_period', 'min_age',
-       'max_age']
+       'primary_industry', 'related_industry_1', 'related_industry_2',
+       'recruiting_area', 'probation_period', 'min_age', 'max_age']
 
 label_encoded_collumns = ['position_level', 'gender_requirement', 'work_type', 
-                          'degree_requirement', 'experience_requirement', 'company_size', 'company_type', 
+                          'degree_requirement', 'experience_requirement', 'company_size', 
                           'primary_industry', 'related_industry_1', 'related_industry_2', 'recruiting_area']
 
 app = Flask(__name__)
