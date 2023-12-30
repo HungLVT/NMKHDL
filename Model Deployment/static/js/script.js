@@ -2,6 +2,7 @@ window.onload = function() {
     fetch('/get-dropdown-options')
         .then(response => response.json())
         .then(data => {
+            console.log(data);
             label_encoded_collumns.forEach(function(col) {
                 var select = document.getElementById(col);
                 data[col].forEach(function(option) {
@@ -33,7 +34,7 @@ document.getElementById('predictionForm').onsubmit = function(e) {
     })
     .then(response => response.json())
     .then(data => {
-        document.getElementById('predictionResult').innerHTML = 'Dự đoán mức lương: ' + data.prediction;
+        document.getElementById('predictionResult').innerHTML = 'Mức lương được dự đoán là: ' + data.prediction;
     })
     .catch((error) => {
         console.error('Error:', error);
