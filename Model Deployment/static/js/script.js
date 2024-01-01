@@ -2,9 +2,14 @@ window.onload = function() {
     fetch('/get-dropdown-options')
         .then(response => response.json())
         .then(data => {
-            console.log(data);
+            // In data ra 
+            // console.log(data);
+            // console.log(label_encoded_collumns);
             label_encoded_collumns.forEach(function(col) {
+                console.log(col);
                 var select = document.getElementById(col);
+                // In ra select
+                console.log(select);
                 data[col].forEach(function(option) {
                     var newOption = document.createElement('option');
                     newOption.value = option;
