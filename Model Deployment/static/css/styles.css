@@ -1,0 +1,58 @@
+body {
+    font-family: 'roboto', sans-serif;
+    background-color: #c4f5ff;
+    /* Đưa bố cục về giữa */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: #ff0a0a;
+    font-style: bold;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+form {
+    margin: 20px 0;
+    color: teal;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+
+    background-color: #06c5fa;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0487f9;
+}
+
+#predictionResult {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f4f4f4;
+}
