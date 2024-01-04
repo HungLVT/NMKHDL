@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>Dự đoán Mức Lương</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h2>Nhập thông tin dự đoán mức lương</h2>
+    <!-- Sử dụng jinja2 để tạp thành form  -->
+    <form id="predictionForm">
+        <!-- Các cột label encoded -->
+        {% for col in label_encoded_collumns %}
+        <label for="{{ col }}">{{ column_translations[col] }}</label>
+        <select id="{{ col }}" name="{{ col }}">
+            <!-- Các Option -->
+        </select><br>
+        {% endfor %}
+
+        <!-- Các cột số -->
+        {% for col in input_collumns %}
+            {% if col not in label_encoded_collumns %}
+                <label for="{{ col }}">{{ column_translations[col] }}</label>
+                <input type="number" id="{{ col }}" name="{{ col }}"><br>
+            {% endif %}
+        {% endfor %}
+
+        <input type="submit" value="Dự đoán mức lương">
+    </form>
+
+    <!-- Khu vực hiển thị kết quả -->
+    <div id="predictionResult"></div>
+<!-- Tạo các biến global JavaScript trong index.html -->
+<script type="text/javascript">
+    // Các biến global được tạo ra từ jinja2
+    var label_encoded_collumns = JSON.parse('{{ label_encoded_collumns | tojson | safe }}');
+    var input_collumns = JSON.parse('{{ input_collumns | tojson | safe }}');
+    var column_translations = JSON.parse('{{ column_translations | tojson | safe }}');
+    console.log(label_encoded_collumns);
+    console.log(input_collumns);
+</script>
+
+<!-- Liên kết đến tệp JavaScript ở thư mục static -->
+<script src="{{ url_for('static', filename='js/script.js') }}" type="text/javascript"></script>
+
+</body>
+</html>
