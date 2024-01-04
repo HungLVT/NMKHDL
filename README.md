@@ -88,6 +88,1040 @@ Khi dữ liệu thu thập hoàn chình nhưng chưa thể sử dụng được,
 
 ### 3. Phân tích dữ liệu qua các câu hỏi đặt ra và trả lời
 
+<div style="border-radius: 10px; border: 2px solid #51F9F4; padding: 15px; background-color:#c2eeec; font-size: 100%; text-align: left;">
+  
+<font size="+1" color=#215C67><b>Câu hỏi 1. Ngành nghề nào có nhiều công việc với mức lương cao nhất?
+</b></font>
+
+<font color="red"><b>Mục đích của câu hỏi: </b></font>  <font color="red">Giúp người quan tâm về vấn đề tuyển dụng biết được nhu cầu việc làm của các ngành nghề đối với các công việc có mức lương cao</font>
+
+
+<font color="red"><b>Cách trả lời câu hỏi: </b></font>
+
+<font color="red">
+
+* Có 3 bước:
+
+    * *Bước 1*: Lọc ra các công việc có thu nhập cao (ngưỡng là phân vị 75% mức lương trung bình)
+    
+    * *Bước 2*: Tính tỉ lệ công việc lương cao ở các ngành nghề, vẽ biểu đồ top 10
+
+    * *Bước 3*: Trực quan hoá
+
+</font>
+
+<font color="red"><b>Kết quả các bước làm: </b></font><font color="red">Biểu đồ cột và đường thể hiện ngành nghề có có tỉ lệ mức lương cao là lớn nhất</font>
+
+</div>
+
+
+<font size="+1" color=blue><b>Bước 1: Lọc ra các công việc có thu nhập cao</b></font> : 
+
+ <font size="+0.5"> <b>
+Giá trị ngưỡng tìm được là: 15.0 triệu</b>
+</font>
+<br/><br/>
+
+<font size="+1" color=blue><b>Bước 2: Tính tỉ lệ công việc lương cao ở các ngành nghề, vẽ biểu đồ top 10
+</b></font>
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+    .dataframe td, .dataframe th {  /* Add this line */
+        border: 1px solid black;
+    }
+
+
+</style>
+<table border="1" class="dataframe">
+<caption><font size="4"><b>Bảng tỉ lệ công việc có lương cao trong các ngành(Lấy ra 5 ngành có tỉ lệ cao nhất)</b></font></caption>
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Ngành nghề</th>
+      <th>Tổng số lượng tuyển</th>
+      <th>Tỉ lệ công việc lương cao</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Khai thác năng lượng - Khoáng sản - Địa chất</td>
+      <td>18</td>
+      <td>61.111111</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Quản lý dự án</td>
+      <td>343</td>
+      <td>58.017493</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Chăn nuôi - Thú y</td>
+      <td>68</td>
+      <td>52.941176</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Bảo hiểm</td>
+      <td>236</td>
+      <td>50.423729</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Luật - Pháp Lý - Tuân thủ</td>
+      <td>238</td>
+      <td>49.159664</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+<font size="+1" color=blue><b>Bước 3: Trực quan hoá
+</b></font>
+
+![Trực quan hoá Q1](images/3.0-question1.png)
+
+
+<font size="+1.5" color="blue"><b>=>Trả lời câu hỏi
+</b></font>
+
+* Marketing và xây dựng là những ngành nghề vừa có nhu cầu tuyển dụng nhiều vừa có tỉ lệ lương cao.
+
+* Các ngành Địa chất, Chăn nuôi – Thú y, Bảo hiểm, Quản lý dự án, Xuất bản – in ấn có tỉ lệ lương rất cao nhưng lại có ít nhu cầu tuyển dụng do chuyên môn đặc thù, đòi hỏi kinh nghiệm và chuyên gia hoặc do ảnh hưởng của công nghệ.
+
+<font>
+
+* Ở biểu đồ về <b>Kinh nghiệm</b>, dễ dàng nhận thấy với kinh nghiệm càng cao thì mức lương nhận được càng cao
+* Ở biểu đồ về <b>Bằng cấp</b>, với bằng đại học thì mức lương được trỉa rộng nhất và cao nhất, các bằng cấp còn lại không khác biệt nhiều
+
+</font>
+
+
+<br/><br/>
+
+
+<div style="border-radius: 10px; border: 2px solid #51F9F4; padding: 15px; background-color:#c2eeec; font-size: 100%; text-align: left;">
+    
+<font size="+1" color=#215C67><b>Câu hỏi 2. Có sự khác biệt trong lương đối với người có kinh nghiệm, bằng cấp khác nhau hay không ?
+</b></font>
+
+<font color="red"><b>Mục đích của câu hỏi: </b></font>  <font color="red">Cho người tìm việc làm hiểu được nhu cầu của thị trường có phù hợp với trình độ của mình hay không</font>
+
+
+<font color="red"><b>Cách trả lời câu hỏi: </b></font>
+<font color="red">
+* Có 3 bước:
+    * *Bước 1*: Đầu tiên, ta lọc các giá trị có ít dữ liệu trong dataset, như giá trị `4 năm`, `Hơn 5 năm` trong cột `Yêu cầu kinh nghiệm` và giá trị `Trên đại học`, `Chứng chỉ` trong cột `Yêu cầu bằng cấp`
+    
+    * *Bước 2*: Ta sẽ xử lí lọc các giá trị ngoại lại trong cột mức lương trung bình
+
+    * *Bước 3*: Vẽ biểu đồ boxplot cho các dữ liệu đã được lọc
+
+    </font>
+
+<font color="red"><b>Kết quả các bước làm: </b></font><font color="red">Biểu đồ boxplot về mức lương trung bình được groupby theo cột `Yêu cầu bằng cấp` và `Yêu cầu kinh nghiệm`</font>
+
+</div>
+
+<font size="+1" color=blue><b>Bước 1: Lọc các giá trị xuất hiện rất ít trong bộ dữ liệu
+</b></font>
+
+ <font size="+0.5"> <b>
+* Các giá trị được lọc ra trong `Yêu cầu bằng cấp` là `Chứng chỉ`,`Trên đại học`
+
+* Các giá trị được lọc ra trong `Yêu cầu kinh nghiệm` là `Hơn 4 năm`,`4 năm`
+</b>
+</font>
+
+<font size="+1" color=blue><b>Bước 2: Lọc các giá ngoại lại trong cột 'Mức lương trung bình'
+</b></font>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<caption><font size="4"><b> Bảng dữ liệu sau khi lọc các giá trị ngoại lai</b></font></caption>
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Khu vực tuyển</th>
+      <th>Thời gian thử việc</th>
+      <th>Cấp bậc</th>
+      <th>Yêu cầu giới tính</th>
+      <th>Số lượng tuyển</th>
+      <th>Hình thức làm việc</th>
+      <th>Yêu cầu bằng cấp</th>
+      <th>Yêu cầu kinh nghiệm</th>
+      <th>Ngành nghề</th>
+      <th>Quy mô công ty</th>
+      <th>Loại công ty</th>
+      <th>Mức lương thấp nhất</th>
+      <th>Mức lương cao nhất</th>
+      <th>Mức lương trung bình</th>
+      <th>Tuổi thấp nhất</th>
+      <th>Tuổi cao nhất</th>
+      <th>Tuổi trung bình</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>560</th>
+      <td>TP.HCM</td>
+      <td>1.8</td>
+      <td>Cộng tác viên</td>
+      <td>Không yêu cầu</td>
+      <td>5</td>
+      <td>Bán thời gian cố định</td>
+      <td>Không</td>
+      <td>Chưa có kinh nghiệm</td>
+      <td>Kế toán/Thực tập sinh/Hành chính - Thư ký</td>
+      <td>Trên 300 người</td>
+      <td>Công ty trách nhiệm hữu hạn</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>2.0</td>
+      <td>22.0</td>
+      <td>36.0</td>
+      <td>29.0</td>
+    </tr>
+    <tr>
+      <th>315</th>
+      <td>Long An</td>
+      <td>2.0</td>
+      <td>Chuyên viên- nhân viên</td>
+      <td>Không yêu cầu</td>
+      <td>1</td>
+      <td>Toàn thời gian cố định</td>
+      <td>Trung cấp</td>
+      <td>Chưa có kinh nghiệm</td>
+      <td>Hành chính - Thư ký/Biên phiên dịch</td>
+      <td>Trên 300 người</td>
+      <td>Công ty cổ phần</td>
+      <td>14.0</td>
+      <td>25.0</td>
+      <td>19.5</td>
+      <td>22.0</td>
+      <td>35.0</td>
+      <td>28.5</td>
+    </tr>
+    <tr>
+      <th>524</th>
+      <td>TP.HCM</td>
+      <td>1.8</td>
+      <td>Chuyên viên- nhân viên</td>
+      <td>Không yêu cầu</td>
+      <td>2</td>
+      <td>Toàn thời gian cố định</td>
+      <td>Trung cấp</td>
+      <td>1 năm</td>
+      <td>Kế toán/Thu mua - Kho Vận - Chuỗi cung ứng/Hàn...</td>
+      <td>10 - 150 người</td>
+      <td>Công ty trách nhiệm hữu hạn</td>
+      <td>8.0</td>
+      <td>10.0</td>
+      <td>9.0</td>
+      <td>23.0</td>
+      <td>35.0</td>
+      <td>29.0</td>
+    </tr>
+    <tr>
+      <th>3538</th>
+      <td>TP.HCM</td>
+      <td>1.6</td>
+      <td>Chuyên viên- nhân viên</td>
+      <td>Không yêu cầu</td>
+      <td>2</td>
+      <td>Toàn thời gian cố định</td>
+      <td>Cao đẳng</td>
+      <td>3 năm</td>
+      <td>Kế toán/Kiểm toán/Tài chính - Đầu tư - Chứng K...</td>
+      <td>10 - 150 người</td>
+      <td>Công ty trách nhiệm hữu hạn</td>
+      <td>9.0</td>
+      <td>10.0</td>
+      <td>9.5</td>
+      <td>23.0</td>
+      <td>40.0</td>
+      <td>31.5</td>
+    </tr>
+    <tr>
+      <th>2849</th>
+      <td>Gia Lai</td>
+      <td>2.0</td>
+      <td>Chuyên viên- nhân viên</td>
+      <td>Không yêu cầu</td>
+      <td>1</td>
+      <td>Toàn thời gian cố định</td>
+      <td>Trung học</td>
+      <td>Chưa có kinh nghiệm</td>
+      <td>Bán hàng - Kinh doanh/Tài chính - Đầu tư - Chứ...</td>
+      <td>Trên 300 người</td>
+      <td>Công ty trách nhiệm hữu hạn</td>
+      <td>15.0</td>
+      <td>25.0</td>
+      <td>20.0</td>
+      <td>25.0</td>
+      <td>40.0</td>
+      <td>32.5</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+    
+<font size="+1" color=blue><b>Bước 3: Trực quan hoá
+</b></font>
+
+![Trực quan hoá Q2](images/3.0-question2.1.png)
+
+![Trực quan hoá Q2](images/3.0-question2.2.png)
+
+<font size="+1.5" color="blue"><b>=>Trả lời câu hỏi
+</b></font>
+
+<font>
+
+* Ở biểu đồ về <b>Kinh nghiệm</b>, dễ dàng nhận thấy với kinh nghiệm càng cao thì mức lương nhận được càng cao
+* Ở biểu đồ về <b>Bằng cấp</b>, với bằng đại học thì mức lương được trỉa rộng nhất và cao nhất, các bằng cấp còn lại không khác biệt nhiều
+
+</font>
+
+<br/><br/>
+
+
+<div style="border-radius: 10px; border: 2px solid #51F9F4; padding: 15px; background-color:#c2eeec; font-size: 100%; text-align: left;">
+    
+<font size="+1" color=#215C67><b>Câu hỏi 3. Khác biệt trong nhu cầu tuyển dụng ở các tỉnh thành khác nhau ?
+</b></font>
+
+<font color="red"><b>Mục đích của câu hỏi: </b></font>  <font color="red">Cho người tìm việc làm hiểu được nhu cầu của thị trường ở các địa phương cụ thể</font>
+
+
+<font color="red"><b>Cách trả lời câu hỏi: </b></font>
+<font color="red">
+* Có 3 bước:
+
+    *  *Bước 1*: Lần lượt tách tất cả các hàng dữ liệu khi tại hàng đó và cột cụ thể có chứa hơn 1 giá trị, ví dụ ở cột `Khu vực tuyển` có các hàng có giá trị là nhiều hơn 1 tỉnh, để làm việc này, nhóm sẽ tách các giá trị ở các hàng trong một cột theo giá trị ngăn cách như `/` hoặc `, `. Sau đó sẽ explode theo cột.
+
+    *  *Bước 2*: Gom nhóm theo các cột dữ liệu `Khu vực tuyển`, `Ngành nghề`,và tính tổng ở cột `Số lượng tuyển` sau đó so sánh số lượng tuyển các ngành ở các tỉnh thành cụ thể. Ở đây nhóm sẽ xem xét ở 5 khu vực tuyển có số lượng tuyển nhiều nhất
+
+    * *Bước 3*: Vẽ 5 biểu đồ cột để so sánh, vì có rất nhiều ngành nghề nên nhóm chỉ trực quan ở 5 ngành nghề có số lượng tuyển cao nhất<font color="red"></font>
+
+</font>
+
+<font color="red"><b>Kết quả các bước làm: </b></font><font color="red">5 biểu đồ cột đôi so sánh số lượng tuyển của các ngành nghề</font>
+
+
+</div>
+
+<font size="+1" color=blue><b>Bước 1: Tách các cột dữ liệu
+</b></font>
+
+ <font size="+0.5"> <b>
+Tách các cột dữ liệu `Ngành nghề` và `Khu vực tuyển` thành các giá trị riêng biệt
+</b>
+</font>
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<caption><font size="4"><b>Bảng dữ liệu sau khi tách</b></font></caption>
+
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Khu vực tuyển</th>
+      <th>Thời gian thử việc</th>
+      <th>Cấp bậc</th>
+      <th>Yêu cầu giới tính</th>
+      <th>Số lượng tuyển</th>
+      <th>Hình thức làm việc</th>
+      <th>Yêu cầu bằng cấp</th>
+      <th>Yêu cầu kinh nghiệm</th>
+      <th>Ngành nghề</th>
+      <th>Quy mô công ty</th>
+      <th>Loại công ty</th>
+      <th>Mức lương thấp nhất</th>
+      <th>Mức lương cao nhất</th>
+      <th>Mức lương trung bình</th>
+      <th>Tuổi thấp nhất</th>
+      <th>Tuổi cao nhất</th>
+      <th>Tuổi trung bình</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>7072</th>
+      <td>Bắc Ninh</td>
+      <td>1.8</td>
+      <td>Chuyên viên- nhân viên</td>
+      <td>Nam</td>
+      <td>10</td>
+      <td>Toàn thời gian cố định</td>
+      <td>Trung cấp</td>
+      <td>Chưa có kinh nghiệm</td>
+      <td>Khoa học - Kỹ thuật</td>
+      <td>Trên 300 người</td>
+      <td>Công ty trách nhiệm hữu hạn</td>
+      <td>8.0</td>
+      <td>10.0</td>
+      <td>9.0</td>
+      <td>25.0</td>
+      <td>36.0</td>
+      <td>30.5</td>
+    </tr>
+    <tr>
+      <th>15092</th>
+      <td>Hải Phòng</td>
+      <td>0.5</td>
+      <td>Chuyên viên- nhân viên</td>
+      <td>Nữ</td>
+      <td>1</td>
+      <td>Toàn thời gian cố định</td>
+      <td>Đại học</td>
+      <td>Chưa có kinh nghiệm</td>
+      <td>Công nghệ thực phẩm - Dinh dưỡng</td>
+      <td>150 - 300 người</td>
+      <td>Công ty trách nhiệm hữu hạn</td>
+      <td>8.0</td>
+      <td>12.0</td>
+      <td>10.0</td>
+      <td>21.0</td>
+      <td>45.0</td>
+      <td>33.0</td>
+    </tr>
+    <tr>
+      <th>8895</th>
+      <td>TP.HCM</td>
+      <td>2.0</td>
+      <td>Chuyên viên- nhân viên</td>
+      <td>Không yêu cầu</td>
+      <td>10</td>
+      <td>Toàn thời gian cố định</td>
+      <td>Cao đẳng</td>
+      <td>Dưới 1 năm</td>
+      <td>Ngân hàng</td>
+      <td>Trên 300 người</td>
+      <td>Công ty trách nhiệm hữu hạn</td>
+      <td>8.0</td>
+      <td>20.0</td>
+      <td>14.0</td>
+      <td>22.0</td>
+      <td>35.0</td>
+      <td>28.5</td>
+    </tr>
+    <tr>
+      <th>6156</th>
+      <td>TP.HCM</td>
+      <td>2.0</td>
+      <td>Chuyên viên- nhân viên</td>
+      <td>Không yêu cầu</td>
+      <td>1</td>
+      <td>Toàn thời gian cố định</td>
+      <td>Đại học</td>
+      <td>2 năm</td>
+      <td>IT Phần mềm</td>
+      <td>Dưới 10 người</td>
+      <td>Công ty trách nhiệm hữu hạn</td>
+      <td>12.0</td>
+      <td>25.0</td>
+      <td>18.5</td>
+      <td>25.0</td>
+      <td>45.0</td>
+      <td>35.0</td>
+    </tr>
+    <tr>
+      <th>4312</th>
+      <td>TP.HCM</td>
+      <td>1.6</td>
+      <td>Chuyên viên- nhân viên</td>
+      <td>Không yêu cầu</td>
+      <td>10</td>
+      <td>Toàn thời gian cố định</td>
+      <td>Cao đẳng</td>
+      <td>1 năm</td>
+      <td>Bán sỉ - Bán lẻ - Quản lý cửa hàng</td>
+      <td>10 - 150 người</td>
+      <td>Công ty trách nhiệm hữu hạn</td>
+      <td>15.0</td>
+      <td>20.0</td>
+      <td>17.5</td>
+      <td>23.0</td>
+      <td>34.0</td>
+      <td>28.5</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+<font size="+1" color=blue><b>Bước 2: Gom nhóm dữ liệu theo `Khu vực tuyển` và `Ngành nghề`, lấy tổng ở cột ` Số lượng tuyển`
+</b></font>
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <caption><font size="4"><b>Bảng dữ liệu số lượng tuyển theo tưng ngành nghề và khu vực tuyển</b></font></caption>
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Khu vực tuyển</th>
+      <th>Ngành nghề</th>
+      <th>Số lượng tuyển</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1309</th>
+      <td>Vĩnh Phúc</td>
+      <td>Ngân hàng</td>
+      <td>116</td>
+    </tr>
+    <tr>
+      <th>1256</th>
+      <td>Tây Ninh</td>
+      <td>Quản lý dự án</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>272</th>
+      <td>Bắc Ninh</td>
+      <td>Xuất Nhập Khẩu</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>532</th>
+      <td>Hải Dương</td>
+      <td>Bảo hiểm</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>1214</th>
+      <td>Trà Vinh</td>
+      <td>Ngân hàng</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <th>883</th>
+      <td>Phú Thọ</td>
+      <td>Xây dựng</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>115</th>
+      <td>Bình Phước</td>
+      <td>An ninh - Bảo vệ</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>1448</th>
+      <td>Đồng Nai</td>
+      <td>Khoa học - Kỹ thuật</td>
+      <td>65</td>
+    </tr>
+    <tr>
+      <th>846</th>
+      <td>Ninh Bình</td>
+      <td>Kế toán</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>Bà Rịa - Vũng Tàu</td>
+      <td>Dược phẩm</td>
+      <td>77</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+    
+<font size="+1" color=blue><b>Bước 3: Trực quan hoá
+</b></font>
+
+![Trực quan hoá Q3.1](images/3.0-question3.1.png)
+
+![Trực quan hoá Q3.2](images/3.0-question3.2.png)
+
+![Trực quan hoá Q3.3](images/3.0-question3.3.png)
+
+![Trực quan hoá Q3.4](images/3.0-question3.4.png)
+
+![Trực quan hoá Q3.4](images/3.0-question3.4.png)
+
+
+
+<font size="+1.5" color="blue"><b>=>Trả lời câu hỏi
+</b></font>
+
+<font>
+
+* Ở biểu đồ về <b>Kinh nghiệm</b>, dễ dàng nhận thấy với kinh nghiệm càng cao thì mức lương nhận được càng cao
+* Ở biểu đồ về <b>Bằng cấp</b>, với bằng đại học thì mức lương được trỉa rộng nhất và cao nhất, các bằng cấp còn lại không khác biệt nhiều
+
+</font>
+
+
+<br></br>
+
+
+<div style="border-radius: 10px; border: 2px solid #51F9F4; padding: 15px; background-color:#c2eeec; font-size: 100%; text-align: left;">
+    
+<font size="+1" color=#215C67><b>Câu hỏi 4. Với độ tuổi cụ thể, người lao động có thể tìm đến những việc làm nào và tiền lương có thể nhận được là bao nhiêu ?
+</b></font>
+
+<font color="red"><b>Mục đích của câu hỏi: </b></font>  <font color="red">Giúp người lao động có thể tìm việc phù hợp với độ tuổi và lương mong muốn</font>
+
+
+<font color="red"><b>Cách trả lời câu hỏi: </b></font>
+<font color="red">
+* Có 4 bước:
+
+    * *Bước 1*: Xem xét biểu đố histogram của cột tuổi, tiến hành chia lại thành các nhóm tuổi `16-25`, `26-30`, `31-60` và lưu vào cột mới là `Nhóm tuổi`
+
+    * *Bước 2*: Tách các hàng mang nhiều giá trị trong cột `Ngành nghề`, dùng explode để tách
+    
+    * *Bước 3*: Tạo bảng để tính số lượng cho mỗi `Ngành nghề` và `Nhóm tuổi`
+
+    * *Bước 4*: Vẽ biểu đồ cột nhiều màu để so sánh, đồng thời biểu diễn lương trung bình bên cạnh mỗi màu trong cột
+    
+</font>
+
+<font color="red"><b>Kết quả các bước làm: </b></font><font color="red">Biểu đồ cột đôi so sánh mức lương của nam và nữ trong cùng một điều kiện ở 5 ngành nghề có số lượng tuyển nhiều nhất</font>
+
+
+</div>
+
+<font size="+1" color=blue><b>Bước 1: Xem xét histogram độ tuổi và chia lại các bins
+</b></font>
+
+![Histogram Q4](images/3.0-question4.1.png)
+
+
+
+<font size="+0.5" ><b>Lựa chọn các bins như sau `16-25`, `26-30`, `31-60` và lưu vào cột mới là `Nhóm tuổi`
+</b></font>
+
+<font size="+1" color=blue><b>Bước 2: Tách cột ngành nghề thành các ngành nghề cụ thể
+</b></font>
+
+
+<font size="+1" color=blue><b>Bước 3: Tạo bảng để tính số lượng cho mỗi `Ngành nghề` và `Nhóm tuổi`
+
+</b></font>
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<caption><font size="4"><b>Bảng ngành nghề theo nhóm tuổi</b></font></caption>
+  <thead>
+    <tr style="text-align: right;">
+      <th>Nhóm tuổi</th>
+      <th>16-25</th>
+      <th>26-30</th>
+      <th>31-60</th>
+    </tr>
+    <tr>
+      <th>Ngành nghề</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>An ninh - Bảo vệ</th>
+      <td>1</td>
+      <td>15</td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <th>An toàn lao động</th>
+      <td>1</td>
+      <td>8</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>Biên phiên dịch</th>
+      <td>7</td>
+      <td>100</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <th>Bán hàng - Kinh doanh</th>
+      <td>250</td>
+      <td>934</td>
+      <td>464</td>
+    </tr>
+    <tr>
+      <th>Bán sỉ - Bán lẻ - Quản lý cửa hàng</th>
+      <td>88</td>
+      <td>353</td>
+      <td>184</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+<font size="+1" color=blue><b>Bước 4: Trực quan hoá trên 10 ngành nghề có số lượng tuyển nhiều nhất, thêm các giá trị lương trung bình trên mỗi cột màu
+
+</b></font>
+
+
+![Trực quan hoá Q4](images/3.0-question4.2.png)
+
+
+
+<font size="+1.5" color=blue><b>=>Trả lời câu hỏi
+</b></font>
+<font>
+
+* Biểu đồ cho thấy giống như biểu đồ về tuyển dụng các ngành ở phần khám phá, ngành <b>Bán hàng - kinh doanh, Hành chính - Thư ký, Chăm sóc khách hàng </b> luôn có số lượng tuyển cao ở các tỉnh.
+
+* Ngành <b>Khách sạn - Nhà hàng - Du lịch </b> xuất hiện ở 4/5 biểu đồ dù không phải nằm trong top 10 ngành có số lượng tuyển nhiều nhất cả nước
+
+* Tại tỉnh <b>Long An</b>, <b> Nghề nghiệp khác</b> chiếm số lượng tuyển khá lớn - Đứng thứ 2 trong toàn bộ số lượng tuyển
+
+* Các ngành nghề <b>Lao động phổ thông, Chăm sóc khách hàng</b> cũng có xuất hiện dù không nằm trong top 10 toàn quốc
+
+</font>
+<br></br>
+<div style="border-radius: 10px; border: 2px solid #51F9F4; padding: 15px; background-color:#c2eeec; font-size: 100%; text-align: left;">
+    
+<font size="+1" color=#215C67><b>Câu hỏi 5. Cùng một điều kiện, liệu có sự khác biệt trong lương của nam và nữ không? 
+</b></font>
+
+<font color="red"><b>Mục đích của câu hỏi: </b></font>  <font color="red">Cho biết liệu có sự phân biệt giới tính nào trong công tác tuyển dụng của các công ty không, nếu có thì cần phải tìm cách khắc phục</font>
+
+
+<font color="red"><b>Cách trả lời câu hỏi: </b></font>
+<font color="red">
+* Có 2 bước:
+
+    *  *Bước 1*: Lần lượt tách tất cả các hàng dữ liệu khi tại hàng đó và cột cụ thể có chứa hơn 1 giá trị, ví dụ ở cột `Khu vực tuyển` có các hàng có giá trị là nhiều hơn 1 tỉnh, để làm việc này, nhóm sẽ tách các giá trị ở các hàng trong một cột theo giá trị ngăn cách như `/` hoặc `, `. Sau đó sẽ explode theo cột.
+
+    *  *Bước 2*: Gom nhóm theo các cột dữ liệu `Khu vực tuyển`, `Ngành nghề`, `Cấp bậc`, `Hình thức làm việc`, `Yêu cầu kinh nghiệm`, `Yêu cầu giới tính`, sau đó so sánh mức lương của nam và nữ. Ở đây nhóm sẽ xem xét ở 5 ngành nghề có lượng tuyển nhiều nhất
+
+    * *Bước 3*: Vẽ biểu đồ cột để so sánh
+
+</font>
+
+<font color="red"><b>Kết quả các bước làm: </b>Biểu đồ cột đôi so sánh mức lương của nam và nữ trong cùng một điều kiện ở 5 ngành nghề có số lượng tuyển nhiều nhất</font>
+
+
+
+</div>
+
+
+<font size="+1" color=blue><b>Bước 1: Tách các cột dữ liệu
+</b></font>
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<caption><font size=4><b>Bảng dữ liệu sau khi tách</b></font></caption>
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Khu vực tuyển</th>
+      <th>Ngành nghề</th>
+      <th>Cấp bậc</th>
+      <th>Hình thức làm việc</th>
+      <th>Yêu cầu bằng cấp</th>
+      <th>Yêu cầu kinh nghiệm</th>
+      <th>Yêu cầu giới tính</th>
+      <th>Mức lương trung bình</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>9644</th>
+      <td>TP.HCM</td>
+      <td>Thu mua - Kho Vận - Chuỗi cung ứng</td>
+      <td>Cộng tác viên</td>
+      <td>Toàn thời gian cố định</td>
+      <td>Không</td>
+      <td>Chưa có kinh nghiệm</td>
+      <td>Nam</td>
+      <td>2.500000</td>
+    </tr>
+    <tr>
+      <th>8616</th>
+      <td>TP.HCM</td>
+      <td>Khách sạn - Nhà hàng - Du lịch</td>
+      <td>Chuyên viên- nhân viên</td>
+      <td>Thực tập</td>
+      <td>Không</td>
+      <td>Chưa có kinh nghiệm</td>
+      <td>Nam</td>
+      <td>3.916667</td>
+    </tr>
+    <tr>
+      <th>6393</th>
+      <td>Lâm Đồng</td>
+      <td>Nông - Lâm - Ngư nghiệp</td>
+      <td>Chuyên viên- nhân viên</td>
+      <td>Toàn thời gian cố định</td>
+      <td>Trung cấp</td>
+      <td>1 năm</td>
+      <td>Nam</td>
+      <td>12.500000</td>
+    </tr>
+    <tr>
+      <th>10085</th>
+      <td>TP.HCM</td>
+      <td>Xuất Nhập Khẩu</td>
+      <td>Chuyên viên- nhân viên</td>
+      <td>Toàn thời gian cố định</td>
+      <td>Cao đẳng</td>
+      <td>2 năm</td>
+      <td>Nữ</td>
+      <td>12.500000</td>
+    </tr>
+    <tr>
+      <th>11347</th>
+      <td>Điện Biên</td>
+      <td>Bảo hiểm</td>
+      <td>Chuyên viên- nhân viên</td>
+      <td>Toàn thời gian cố định</td>
+      <td>Cao đẳng</td>
+      <td>1 năm</td>
+      <td>Nữ</td>
+      <td>15.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+<font size="+1" color=blue><b>Bước 2: Gom nhóm dữ liệu và xem xét lương của nam và nữ ở 5 ngành nghề có số lượng tuyển nhiều nhất
+</b></font>
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<caption><font size=4><b>Bảng lương trung bình của Nữ giới ở các ngành nghề</b></font></caption>
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Ngành nghề</th>
+      <th>Mức lương trung bình</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Bán hàng - Kinh doanh</td>
+      <td>13.090624</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Bán sỉ - Bán lẻ - Quản lý cửa hàng</td>
+      <td>13.288988</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Chăm sóc khách hàng</td>
+      <td>12.658983</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Hành chính - Thư ký</td>
+      <td>10.811160</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Kế toán</td>
+      <td>11.023240</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<caption><font size=4><b>Bảng lương trung bình của Nam giới ở các ngành nghề</b></font></caption>
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Ngành nghề</th>
+      <th>Mức lương trung bình</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Bán hàng - Kinh doanh</td>
+      <td>13.090624</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Bán sỉ - Bán lẻ - Quản lý cửa hàng</td>
+      <td>13.288988</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Chăm sóc khách hàng</td>
+      <td>12.658983</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Hành chính - Thư ký</td>
+      <td>10.811160</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Kế toán</td>
+      <td>11.023240</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+<font size="+1" color=blue><b>Bước 3: Trực quan hoá
+</b></font>
+
+![Trực quan hoá Q5](images/3.0-question5.png)
+
+    
+<font size="+1" color=#215C67><b>Nhận xét:
+</b></font>
+
+
+* Có thể thấy ở 5 ngành nghề có số lượng tuyển lớn nhất, dù không chênh lệch nhiều, nhưng lương của nam giới cao hơn nữ giới trong cả 5 ngành
+
+* Việc cao hơn trong cả 5 ngành không thể hiện rõ được vấn đề mà câu hỏi đặt ra, nên chúng ta sẽ xem xét tiếp rằng trong các ngành còn lại liệu lương của nam giới có cao hơn nữ giới trong tất cả các ngành không
+
+<font size=3><b>Xem xét ở tất cả các ngành</b></font>
+
+Số lượng ngành nghề nam giới có lương cao hơn nữ giới: 30
+
+Số lượng ngành nghề nữ giới có lương cao hơn nam giới: 23
+
+<font size="+1" color=#215C67><b>Nhận xét:
+</b></font>
+
+
+* Vẫn có nhiều ngành nghề mà trong đó lương của nữ giới cao hơn nam giới trong cùng điều kiện tuyển dụng (23/53 ngành, gần một nửa số ngành thu thập được trong dữ liệu). Có thể thấy rằng gần như không có sự phân biệt giới tính trong công việc ngày nay.
+
+<font size="+1.5" color=blue><b>=>Trả lời câu hỏi
+</b></font>
+
+
+
+* Ngày nay, phân biệt giới tính trong công việc gần như là không còn tồn tại
+
+
+
+
+
 ### 4. Mô hình hóa dữ liệu
 
 - Ở phần này nhóm áp dụng những mô hình học máy đơn giản của thư viện sci-kit learn để tạo ra mô hình dự đoán mức lương.
