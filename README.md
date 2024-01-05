@@ -957,27 +957,27 @@ Biểu đồ cho thấy Nhóm tuổi từ 26-30 được tuyển dụng nhiều 
     <tr>
       <th>0</th>
       <td>Bán hàng - Kinh doanh</td>
-      <td>13.090624</td>
+      <td>13.411648</td>
     </tr>
     <tr>
       <th>1</th>
       <td>Bán sỉ - Bán lẻ - Quản lý cửa hàng</td>
-      <td>13.288988</td>
+      <td>13.710948</td>
     </tr>
     <tr>
       <th>2</th>
       <td>Chăm sóc khách hàng</td>
-      <td>12.658983</td>
+      <td>12.758187</td>
     </tr>
     <tr>
       <th>3</th>
       <td>Hành chính - Thư ký</td>
-      <td>10.811160</td>
+      <td>10.862683</td>
     </tr>
     <tr>
       <th>4</th>
       <td>Kế toán</td>
-      <td>11.023240</td>
+      <td>11.478390</td>
     </tr>
   </tbody>
 </table>
