@@ -128,24 +128,7 @@ Giá trị ngưỡng tìm được là: 15.0 triệu</b>
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-    .dataframe td, .dataframe th {  /* Add this line */
-        border: 1px solid black;
-    }
-
-
-</style>
 <table border="1" class="dataframe">
 <caption><font size="4"><b>Bảng tỉ lệ công việc có lương cao trong các ngành(Lấy ra 5 ngành có tỉ lệ cao nhất)</b></font></caption>
   <thead>
@@ -251,20 +234,9 @@ Giá trị ngưỡng tìm được là: 15.0 triệu</b>
 
 <font size="+1" color=blue><b>Bước 2: Lọc các giá ngoại lại trong cột 'Mức lương trung bình'
 </b></font>
+
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
 <caption><font size="4"><b> Bảng dữ liệu sau khi lọc các giá trị ngoại lai</b></font></caption>
   <thead>
@@ -450,19 +422,7 @@ Tách các cột dữ liệu `Ngành nghề` và `Khu vực tuyển` thành các
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
 <caption><font size="4"><b>Bảng dữ liệu sau khi tách</b></font></caption>
 
@@ -598,19 +558,7 @@ Tách các cột dữ liệu `Ngành nghề` và `Khu vực tuyển` thành các
 </b></font>
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <caption><font size="4"><b>Bảng dữ liệu số lượng tuyển theo tưng ngành nghề và khu vực tuyển</b></font></caption>
   <thead>
@@ -765,19 +713,7 @@ Tách các cột dữ liệu `Ngành nghề` và `Khu vực tuyển` thành các
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
 <caption><font size="4"><b>Bảng ngành nghề theo nhóm tuổi</b></font></caption>
   <thead>
@@ -885,19 +821,7 @@ Tách các cột dữ liệu `Ngành nghề` và `Khu vực tuyển` thành các
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
 <caption><font size=4><b>Bảng dữ liệu sau khi tách</b></font></caption>
   <thead>
@@ -978,19 +902,7 @@ Tách các cột dữ liệu `Ngành nghề` và `Khu vực tuyển` thành các
 </b></font>
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
 <caption><font size=4><b>Bảng lương trung bình của Nữ giới ở các ngành nghề</b></font></caption>
   <thead>
@@ -1032,19 +944,7 @@ Tách các cột dữ liệu `Ngành nghề` và `Khu vực tuyển` thành các
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
 <caption><font size=4><b>Bảng lương trung bình của Nam giới ở các ngành nghề</b></font></caption>
   <thead>
