@@ -3,7 +3,9 @@
 <div style="color: red; font-size: 20px; font-weight: bold;">Người thực hiện: Nhóm 22</div>
 
 ## Giới thiệu đồ án
+Trong bối cảnh nền kinh tế suy thoái, song song với đó là thời đại công nghệ 4.0 với sự bùng nổ của công nghệ và dữ liệu, việc sử dụng phương pháp khoa học dữ liệu để đánh giá thị trường việc làm trở nên ngày càng quan trọng.
 
+Đồ án này được nhóm thực hiện nhằm cung cấp cho người lao động một cái nhìn toàn diện về nhu cầu việc làm tại Việt Nam (mức lương, bằng cấp, khu vực,...), giúp họ có những chiến lược về việc làm phù hợp cho bản thân.
 ## Môi trường sử dụng
 
 - Ngôn ngữ Python >= 3.9
@@ -51,10 +53,10 @@ Khi dữ liệu thu thập hoàn chình nhưng chưa thể sử dụng được,
 
 - Tên công ty: Dựa vào tên công ty, nhóm sẽ chia thành thành `Công ty trách nhiệm hữu hạn` và `Công ty cổ phần` sau đó loại bỏ cột tên công ty và thay vào đó là cột `Loại công ty`
 - Mức lương: Dựa vào mức lương, nhóm sẽ loại bỏ những giá trị mang tên là ` Thỏa thuận`. Nhưng dữ liệu thô thường có dạng `8 - 15 triệu`. Do đó nhóm sẽ tách ra thành ` Mức lương thấp nhất`, `Mức lương cao nhất` và `Mức lương trung bình` để có thể sử dụng được.
-- Thời gian thử việc: Nhóm sẽ tiền hành tách số và chuyển cột này thành kiển float.
-- Yêu cầu giới tính: Một số công việc yêu cầu giời tính cụ thể, nhưng một số không yêu cầu giới tính nên dữ liệu thô không có giá trị. Nhóm sẽ thay thế giá trị này bằng `Không yêu cầu`
+- Thời gian thử việc: Nhóm sẽ tiến hành tách số và chuyển cột này thành kiểu float.
+- Yêu cầu giới tính: Một số công việc yêu cầu giới tính cụ thể, nhưng một số không yêu cầu giới tính nên dữ liệu thô không có giá trị. Nhóm sẽ thay thế giá trị này bằng `Không yêu cầu`
 - Yêu cầu bằng cấp: Những dữ liệu không có giá trị sẽ được thay thế bằng `Không`
-- Yêu cầu độ tuổi: Tương tự như ` Mức lương`, nhóm sẽ tách ra thành `Tuổi thấp nhất` và `Tuổi cao nhất` , `Tuổi trung bình` để có thể sử dụng được.
+- Yêu cầu độ tuổi: Tương tự như `Mức lương`, nhóm sẽ tách ra thành `Tuổi thấp nhất` và `Tuổi cao nhất` , `Tuổi trung bình` để có thể sử dụng được.
 
 => Cuối cùng kiểm tra dữ liệu trùng lặp và xóa nó đi.
 
@@ -80,7 +82,7 @@ Khi dữ liệu thu thập hoàn chình nhưng chưa thể sử dụng được,
 
 ![Mức lương](images/2.0-noise-salary.png)
 
-- Có thể thấy có rất nhiều outliers trong dữ liệu mức lương. Nguyên nhân chính là nhà tuyển dụng đưa ra khoảng lương rất lớn nên khi lấy trung bình thì dữ liệu có nhiều outliers, Do đó để trảnh ảnh hưởng đến phân tích và mô hình dữ liệu sau này nhóm sẽ áp dụng IQR để loại bỏ những outliers này.
+- Có thể thấy có rất nhiều outliers trong dữ liệu mức lương. Nguyên nhân chính là nhà tuyển dụng đưa ra khoảng lương rất lớn nên khi lấy trung bình thì dữ liệu có nhiều outliers. Do đó để tránh ảnh hưởng đến phân tích và mô hình dữ liệu sau này nhóm sẽ áp dụng IQR để loại bỏ những outliers này.
 
 ![Mức lương sau khi loại bỏ outliers](images/2.0-eliminate-outliers.png)
 
@@ -188,11 +190,6 @@ Giá trị ngưỡng tìm được là: 15.0 triệu</b>
 
 * Các ngành Địa chất, Chăn nuôi – Thú y, Bảo hiểm, Quản lý dự án, Xuất bản – in ấn có tỉ lệ lương rất cao nhưng lại có ít nhu cầu tuyển dụng do chuyên môn đặc thù, đòi hỏi kinh nghiệm và chuyên gia hoặc do ảnh hưởng của công nghệ.
 
-<font>
-
-* Ở biểu đồ về <b>Kinh nghiệm</b>, dễ dàng nhận thấy với kinh nghiệm càng cao thì mức lương nhận được càng cao
-* Ở biểu đồ về <b>Bằng cấp</b>, với bằng đại học thì mức lương được trỉa rộng nhất và cao nhất, các bằng cấp còn lại không khác biệt nhiều
-
 </font>
 
 
@@ -201,10 +198,10 @@ Giá trị ngưỡng tìm được là: 15.0 triệu</b>
 
 <div style="border-radius: 10px; border: 2px solid #51F9F4; padding: 15px; background-color:#c2eeec; font-size: 100%; text-align: left;">
     
-<font size="+1" color=#215C67><b>Câu hỏi 2. Có sự khác biệt trong lương đối với người có kinh nghiệm, bằng cấp khác nhau hay không ?
+<font size="+1" color=#215C67><b>Câu hỏi 2. Có sự khác biệt trong lương đối với người có kinh nghiệm, bằng cấp khác nhau hay không?
 </b></font>
 
-<font color="red"><b>Mục đích của câu hỏi: </b></font>  <font color="red">Cho người tìm việc làm hiểu được nhu cầu của thị trường có phù hợp với trình độ của mình hay không</font>
+<font color="red"><b>Mục đích của câu hỏi: </b></font>  <font color="red">Giúp người tìm việc làm hiểu được nhu cầu của thị trường có phù hợp với trình độ của mình hay không</font>
 
 
 <font color="red"><b>Cách trả lời câu hỏi: </b></font>
@@ -783,7 +780,8 @@ Tách các cột dữ liệu `Ngành nghề` và `Khu vực tuyển` thành các
 <font size="+1.5" color=blue><b>=>Trả lời câu hỏi
 </b></font>
 
-Biểu đồ cho thấy Nhóm tuổi từ 26-30 được tuyển dụng nhiều nhất, kế tiếp là từ 31-60, và ít nhất là nhóm tuổi 16-25. Đồng thời có thể thấy mức lương không chêch lệch quá nhiều giữa các nhóm tuổi ở các ngành nghề, và ở các ngành nghề với nhau
+* Biểu đồ cho thấy Nhóm tuổi từ 26-30 được tuyển dụng nhiều nhất, kế tiếp là từ 31-60, và ít nhất là nhóm tuổi 16-25.
+* Đồng thời có thể thấy mức lương không chêch lệch quá nhiều giữa các nhóm tuổi ở các ngành nghề, và ở các ngành nghề với nhau
 
 <br></br>
 <div style="border-radius: 10px; border: 2px solid #51F9F4; padding: 15px; background-color:#c2eeec; font-size: 100%; text-align: left;">
@@ -957,27 +955,27 @@ Biểu đồ cho thấy Nhóm tuổi từ 26-30 được tuyển dụng nhiều 
     <tr>
       <th>0</th>
       <td>Bán hàng - Kinh doanh</td>
-      <td>13.411648</td>
+      <td>13.090624</td>
     </tr>
     <tr>
       <th>1</th>
       <td>Bán sỉ - Bán lẻ - Quản lý cửa hàng</td>
-      <td>13.710948</td>
+      <td>13.288988</td>
     </tr>
     <tr>
       <th>2</th>
       <td>Chăm sóc khách hàng</td>
-      <td>12.758187</td>
+      <td>12.658983</td>
     </tr>
     <tr>
       <th>3</th>
       <td>Hành chính - Thư ký</td>
-      <td>10.862683</td>
+      <td>10.811160</td>
     </tr>
     <tr>
       <th>4</th>
       <td>Kế toán</td>
-      <td>11.478390</td>
+      <td>11.023240</td>
     </tr>
   </tbody>
 </table>
@@ -1034,7 +1032,7 @@ Số lượng ngành nghề nữ giới có lương cao hơn nam giới: 23
 
 - Không phải cột nào cũng ảnh hưởng đến cột Lương trung bình. Do đó phải qua các bước để đánh giá những cột nào có thể ảnh hưởng đến cột mục tiêu. Dựa vào mức kỳ vọng p-value để đánh giá xem cột đó có ảnh hưởng đến cột mục tiêu hay không.
 
-- Đổi với những cột có dữ liệu phân loại, Nhóm sẽ áp dụng `ANOVA` để đánh giá xem cột đó có ảnh hưởng đến cột mục tiêu hay không.
+- Đổi với những cột có dữ liệu phân loại, nhóm sẽ áp dụng `ANOVA` để đánh giá xem cột đó có ảnh hưởng đến cột mục tiêu hay không.
 
 ![Xử lý cột dữ liệu phân loại](images/4.0-cat_col_affect.png)
 
