@@ -657,8 +657,13 @@ Tách các cột dữ liệu `Ngành nghề` và `Khu vực tuyển` thành các
 
 <font>
 
-* Ở biểu đồ về <b>Kinh nghiệm</b>, dễ dàng nhận thấy với kinh nghiệm càng cao thì mức lương nhận được càng cao
-* Ở biểu đồ về <b>Bằng cấp</b>, với bằng đại học thì mức lương được trỉa rộng nhất và cao nhất, các bằng cấp còn lại không khác biệt nhiều
+* Biểu đồ cho thấy giống như biểu đồ về tuyển dụng các ngành ở phần khám phá, ngành <b>Bán hàng - kinh doanh, Hành chính - Thư ký, Chăm sóc khách hàng </b> luôn có số lượng tuyển cao ở các tỉnh.
+
+* Ngành <b>Khách sạn - Nhà hàng - Du lịch </b> xuất hiện ở 4/5 biểu đồ dù không phải nằm trong top 10 ngành có số lượng tuyển nhiều nhất cả nước
+
+* Tại tỉnh <b>Long An</b>, <b> Nghề nghiệp khác</b> chiếm số lượng tuyển khá lớn - Đứng thứ 2 trong toàn bộ số lượng tuyển
+
+* Các ngành nghề <b>Lao động phổ thông, Chăm sóc khách hàng</b> cũng có xuất hiện dù không nằm trong top 10 toàn quốc
 
 </font>
 
@@ -777,24 +782,18 @@ Tách các cột dữ liệu `Ngành nghề` và `Khu vực tuyển` thành các
 
 <font size="+1.5" color=blue><b>=>Trả lời câu hỏi
 </b></font>
-<font>
 
-* Biểu đồ cho thấy giống như biểu đồ về tuyển dụng các ngành ở phần khám phá, ngành <b>Bán hàng - kinh doanh, Hành chính - Thư ký, Chăm sóc khách hàng </b> luôn có số lượng tuyển cao ở các tỉnh.
+Biểu đồ cho thấy Nhóm tuổi từ 26-30 được tuyển dụng nhiều nhất, kế tiếp là từ 31-60, và ít nhất là nhóm tuổi 16-25. Đồng thời có thể thấy mức lương không chêch lệch quá nhiều giữa các nhóm tuổi ở các ngành nghề, và ở các ngành nghề với nhau
 
-* Ngành <b>Khách sạn - Nhà hàng - Du lịch </b> xuất hiện ở 4/5 biểu đồ dù không phải nằm trong top 10 ngành có số lượng tuyển nhiều nhất cả nước
-
-* Tại tỉnh <b>Long An</b>, <b> Nghề nghiệp khác</b> chiếm số lượng tuyển khá lớn - Đứng thứ 2 trong toàn bộ số lượng tuyển
-
-* Các ngành nghề <b>Lao động phổ thông, Chăm sóc khách hàng</b> cũng có xuất hiện dù không nằm trong top 10 toàn quốc
-
-</font>
 <br></br>
 <div style="border-radius: 10px; border: 2px solid #51F9F4; padding: 15px; background-color:#c2eeec; font-size: 100%; text-align: left;">
     
 <font size="+1" color=#215C67><b>Câu hỏi 5. Cùng một điều kiện, liệu có sự khác biệt trong lương của nam và nữ không? 
 </b></font>
 
-<font color="red"><b>Mục đích của câu hỏi: </b></font>  <font color="red">Cho biết liệu có sự phân biệt giới tính nào trong công tác tuyển dụng của các công ty không, nếu có thì cần phải tìm cách khắc phục</font>
+<font color="red"><b>Mục đích của câu hỏi: </b></font>  
+
+<font color="red">Cho biết liệu có sự phân biệt giới tính nào trong công tác tuyển dụng của các công ty không, nếu có thì cần phải tìm cách khắc phục</font>
 
 
 <font color="red"><b>Cách trả lời câu hỏi: </b></font>
